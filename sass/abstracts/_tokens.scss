@@ -101,9 +101,13 @@ $navigation-font-weight: $body-font-weight;
 
 // MISC
 
-$box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012), 0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
-$box-shadow-2: 0px 6px 5px rgb(0, 0, 0, 0.016), 0px 22px 18px rgb(0, 0, 0, 0.024), 0px 100px 80px rgb(0, 0, 0, 0.04);
+$box-shadow-1: 0px 6px 5px rgb($color-black, 0.012), 0px 22px 18px rgb($color-black, 0.018), 0px 100px 80px rgb($color-black, 0.03);
+$box-shadow-2: 0px 6px 5px rgb($color-black, 0.016), 0px 22px 18px rgb($color-black, 0.024), 0px 100px 80px rgb($color-black, 0.04);
 
+@if $active-theme == $dark or $enable-media-query-dark-mode {
+    $box-shadow-1: 0px 6px 5px rgb($color-white, 0.012), 0px 22px 18px rgb($color-white, 0.018), 0px 100px 80px rgb($color-white, 0.03);
+    $box-shadow-2: 0px 6px 5px rgb($color-white, 0.016), 0px 22px 18px rgb($color-white, 0.024), 0px 100px 80px rgb($color-white, 0.04);
+}
 
 
 // BUTTONS
