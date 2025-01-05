@@ -5,7 +5,7 @@
 
 // THEME STYLE
 
-$active-theme: $light;
+$active-theme: $dark;
 $enable-media-query-dark-mode: false;
 
 
@@ -24,7 +24,7 @@ $heading-3-font-size: $font-size-700;
 // BODY
 
 $color-text-default: $color-neutral-300;
-$color-background-default: $color-primary-100;
+$color-background-default: $color-neutral-000;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-400;
 

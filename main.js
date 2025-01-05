@@ -1,24 +1,47 @@
-// import './style.css'
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.registerPlugin(ScrollTrigger);
+        
+    const headerTimeline = gsap.timeline({ defaults: { duration: 1 } });
+    const heroTimeline = gsap.timeline({ defaults: { duration: 1.5 } });
 
-// setupCounter(document.querySelector('#counter'))
+    headerTimeline
+        .from(".header__details", { opacity: 0, x: -20, ease: "bounce" })
+        .from(".navigation a", { opacity: 0, x: 20, stagger: 0.2 });
+
+    heroTimeline
+        .from(".hero__inner", { opacity: 0 });
+
+    gsap.utils.toArray(".animate").forEach((element) => {
+        const isFooter = element.tagName.toLowerCase() === "footer";
+
+        gsap.from(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: isFooter ? "top: 90%" : "top 65%",
+                end: "bottom 20%",
+                toggleClass: "in-view", 
+                once: true,
+            },
+            opacity: 0,
+            y: -20,
+            duration: 1,
+        });
+
+        gsap.from(element.querySelectorAll(".card"), {
+            scrollTrigger: {
+            trigger: element,
+            start: "top 65%",
+            end: "bottom 20%",
+            toggleClass: "in-view", 
+            once: true,
+            },
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            stagger: 0.3,
+        });
+    });
+});

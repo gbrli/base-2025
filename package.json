@@ -12,5 +12,8 @@
     "sass": "^1.63.3",
     "vite": "^4.3.9",
     "vite-plugin-html-purgecss": "^0.1.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
   }
 }

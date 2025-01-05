@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site Title</title>
   <link rel="stylesheet" href="/sass/main.scss">
@@ -12,7 +12,7 @@
 <body class="site">
   <header class="header">
     <div class="header__inner container">
-      <div class="flex-group">
+      <div class="header__details flex-group">
         <img class="header__logo" src="./vite.svg"/>
         <p class="header__text">Site name</p>
       </div>
@@ -35,14 +35,14 @@
     <div class="hero__inner container">
       <h1 class="hero__title color-neutral-300">Hero Title</h1>    
       <p class="hero__text text-max">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ut dolor beatae reprehenderit iste vel cum laboriosam pariatur fugit, odio cumque obcaecati delectus dignissimos numquam iure animi sint.</p>
-      <div class="flex-group padding-block-4">
+      <div class="hero__ctas flex-group padding-block-4">
         <a href="#" class="button" data-type="accent">Button</a>
         <a href="#" class="button" data-type="primary">Button</a>
       </div>
     </div>
   </div>
   <main>
-    <section class="container padding-block-6" data-type="narrow">
+    <section class="container padding-block-6 animate" data-type="narrow">
       <h2 class="text-center">
         Section Title
       </h2>
@@ -50,14 +50,14 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ut dolor beatae reprehenderit iste vel cum laboriosam pariatur fugit, odio cumque obcaecati delectus dignissimos numquam iure animi sint.
       </p>
     </section>
-    <section class="container padding-block-6">
+    <section class="container padding-block-6 animate">
       <h2 class="text-center">
         Section Title
       </h2>
       <p class="text-center">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ut dolor beatae reprehenderit iste vel cum laboriosam pariatur fugit, odio cumque obcaecati delectus dignissimos numquam iure animi sint.
       </p>
-      <div class="section__article grid-even-columns padding-block-6">
+      <div class="section__article grid-even-columns padding-block-6 animate">
         <article class="article">
           <h3>Article Title</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ut dolor beatae reprehenderit iste vel cum laboriosam pariatur fugit, odio cumque obcaecati delectus dignissimos numquam iure animi sint.</p>
@@ -68,7 +68,7 @@
         </article>        
       </div>
     </section>
-    <section class="container padding-block-6">
+    <section class="container padding-block-6 animate">
       <h2 class="text-center">
         Section Title
       </h2>
@@ -100,7 +100,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer animate">
     <div class="container padding-block-6">
       <nav aria-label="secondary-nav">
       <ul class="navigation flex-group">
@@ -120,7 +120,7 @@
       </p>
     </div>
   </footer>
-  <script src="/main.js"></script>
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
