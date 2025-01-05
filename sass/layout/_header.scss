@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  color: $header-text-color;
+  background-color: $header-background-color;
+  padding-block: $header-padding-block;
+
+  &__inner {
+    display: flex;
+    gap: $size-4;
+    align-items: $header-alignment;
+    justify-content: $header-justification-small-screens;
+    padding-inline: $header-padding-inline;
+
+    @include mq(medium) {
+      justify-content: $header-justification-large-screens;
+    }
+  }
+}

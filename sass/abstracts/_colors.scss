@@ -1,0 +1,81 @@
+$color-white: #fff;
+$color-grey-100: #d2d2d2;
+$color-grey-200: hsl(192 25% 12%);
+$color-black: hsl(192 25% 12%);;
+
+$color-cyan-100: hsl(192 75% 95%);
+$color-cyan-200: hsl(192 75% 82.5%);
+$color-cyan-300: hsl(192 75% 75%);
+$color-cyan-400: hsl(192 75% 70%);
+$color-cyan-500: hsl(192 75% 25%);
+$color-cyan-600: hsl(192 75% 20%);
+$color-cyan-700: hsl(192 75% 17.5%);
+$color-cyan-800: hsl(192 75% 12%);
+
+$color-pink-100: hsl(312 75% 95%);
+$color-pink-200: hsl(312 75% 82.5%);
+$color-pink-300: hsl(312 75% 70%);
+$color-pink-400: hsl(312 75% 60%);
+$color-pink-500: hsl(312 75% 50%);
+$color-pink-600: hsl(312 75% 40%);
+$color-pink-700: hsl(312 75% 30%);
+$color-pink-800: hsl(312 75% 17.5%);
+
+$light: (
+  "neutral": (
+    "000": $color-white,
+    "100": $color-grey-100,
+    "200": $color-grey-200,
+    "300": $color-black,
+  ),
+  "accent": (
+    "100": $color-pink-100,
+    "200": $color-pink-200,
+    "300": $color-pink-300,
+    "400": $color-pink-400,
+  ),
+  "primary": (
+    "100": $color-cyan-100,
+    "200": $color-cyan-200,
+    "300": $color-cyan-300,
+    "400": $color-cyan-400,
+  ),
+);
+
+$dark: (
+  "neutral": (
+    "300": $color-white,
+    "200": $color-grey-100,
+    "100": $color-grey-200,
+    "000": $color-black,
+  ),
+  "accent": (
+    "100": $color-pink-500,
+    "200": $color-pink-600,
+    "300": $color-pink-700,
+    "400": $color-pink-800,
+  ),
+  "primary": (
+    "100": $color-cyan-500,
+    "200": $color-cyan-600,
+    "300": $color-cyan-700,
+    "400": $color-cyan-800,
+  ),
+);
+
+
+// contextual color tokens
+$color-neutral-000: var(--neutral-000);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+
+$color-primary-100: var(--primary-100);
+$color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+
+$color-accent-100: var(--accent-100);
+$color-accent-200: var(--accent-200);
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);

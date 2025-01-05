@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.hero {
+  color: $hero-text-color;
+  background-color: $hero-background-color;
+  padding: $hero-padding-block;
+  height: calc(100vh - $header-height);
+
+  &__title {
+    text-align: left;
+    width: 100%;
+    color: $hero-text-color;
+  }
+}

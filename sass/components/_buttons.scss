@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  text-transform: $button-text-transform;
+  font-weight: $button-font-weight;
+  padding: $button-padding;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  transition: 275ms ease;
+  
+  &[data-type="primary"] {
+    @include button($button-primary-background, $button-primary-color, $button-primary-background-hover, $button-primary-color-hover);
+  }
+
+  &[data-type="accent"] {
+    @include button($button-accent-background, $button-accent-color, $button-accent-background-hover, $button-accent-color-hover);
+  }
+}

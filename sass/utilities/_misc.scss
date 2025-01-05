@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.border-radius-1 {
+  border-radius: $border-radius-1;
+}
+
+.border-radius-2 {
+  border-radius: $border-radius-2;
+}
+
+.box-shadow-1 {
+  box-shadow: $box-shadow-1;
+}
+
+.box-shadow-2 {
+  box-shadow: $box-shadow-2;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: $size-2;
+}
+
+.round {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.center-transform { 
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+}

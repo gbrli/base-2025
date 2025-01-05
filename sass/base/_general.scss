@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  color: $body-text-color;
+  background-color: $body-background-color;
+  line-height: $body-line-height;
+}
+
+a {
+  color: $link-color;
+}
+
+a:is(:hover, :focus) {
+  color: $link-color-hover;
+}
+
+h1 {
+  font-size: $heading-1-font-size;
+  font-family: $heading-font-family;
+  color: $heading-color-default;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  text-transform: $heading-text-transform;
+}
+
+h2 {
+  font-size: $heading-2-font-size;
+  font-family: $heading-font-family;
+  color: $heading-color-default;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  text-transform: $heading-text-transform;
+}
+
+h3 {
+  font-size: $heading-3-font-size;
+  font-family: $heading-font-family;
+  color: $heading-color-default;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  text-transform: $heading-text-transform;
+}
+
